@@ -1,16 +1,17 @@
-print(
-    f"#######################################\n"+
-    f"# Welcome To Web Scraping With Python #\n"+
-    f"#######################################\n"
-)
+
 
 while(True):
+    print(
+        f"\n#######################################\n"+
+        f"# Welcome To Web Scraping With Python #\n"+
+        f"#######################################\n"
+    )
     print(
         f"Please choose a scraping app to use it\n" +
         f"Enter 0 to exit\n"
     )
     print(
-        f"\n               App Lists               \n" +
+        f"               App Lists               \n" +
         f"***************************************\n" +
         f"1. Upcoming Events of Python"
     )
@@ -28,6 +29,9 @@ while(True):
         tool_option = int(input())
         if tool_option == 1:
             from upcoming_python_events.with_beautifulsoup import scraper
+            scraper()
+        elif tool_option == 2:
+            from upcoming_python_events.with_selenium import scraper
             scraper()
     
 
