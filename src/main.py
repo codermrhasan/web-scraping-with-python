@@ -14,7 +14,8 @@ while(True):
         "               App Lists               \n" +
         "***************************************\n" +
         "1. Upcoming Events of Python\n" +
-        "2. Hacker News"
+        "2. Hacker News\n" +
+        "3. Hacker News API Fetching"
     )
     
 
@@ -40,6 +41,9 @@ while(True):
         print("Scraping Data...")
         hacker_news_scraper()
     
+    elif app_option == 3:
+        from hacker_news_api.with_beautifulsoup import hacker_news_api_integration
+        hacker_news_api_integration()
 
 
 print(
