@@ -9,6 +9,11 @@ This repository contains some mini projects of web scraping using python
 
 N.B: If you want to use selenium make sure you have installed chrome browser and chromedriver  
 
+## Application List
+1. Upcoming Python Events   
+2. Hacker News
+3. Hacker News API
+
 ## Technologies Used
 - Python
 - Requests
