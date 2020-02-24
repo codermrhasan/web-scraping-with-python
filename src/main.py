@@ -2,18 +2,19 @@
 
 while(True):
     print(
-        f"\n#######################################\n"+
-        f"# Welcome To Web Scraping With Python #\n"+
-        f"#######################################\n"
+        "\n#######################################\n"+
+        "# Welcome To Web Scraping With Python #\n"+
+        "#######################################\n"
     )
     print(
-        f"Please choose a scraping app to use it\n" +
-        f"Enter 0 to exit\n"
+        "Please choose a scraping app to use it\n" +
+        "Enter 0 to exit\n"
     )
     print(
-        f"               App Lists               \n" +
-        f"***************************************\n" +
-        f"1. Upcoming Events of Python"
+        "               App Lists               \n" +
+        "***************************************\n" +
+        "1. Upcoming Events of Python\n" +
+        "2. Hacker News"
     )
     
 
@@ -33,6 +34,11 @@ while(True):
         elif tool_option == 2:
             from upcoming_python_events.with_selenium import scraper
             scraper()
+
+    elif app_option == 2:
+        from hacker_news.with_beautifulsoup import hacker_news_scraper
+        print("Scraping Data...")
+        hacker_news_scraper()
     
 
 
