@@ -32,5 +32,3 @@ def quotes_scraper(base_url):
 def main_scraper():
     base_url = "http://quotes.toscrape.com"
     quotes_scraper(base_url)
-
-main_scraper()
