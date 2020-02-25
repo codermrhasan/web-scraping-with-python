@@ -15,7 +15,9 @@ while(True):
         "***************************************\n" +
         "1. Upcoming Events of Python\n" +
         "2. Hacker News\n" +
-        "3. Hacker News API Fetching"
+        "3. Hacker News API Fetching\n" +
+        "4. Quotes Scraping"
+
     )
     
 
@@ -45,6 +47,9 @@ while(True):
         from hacker_news_api.with_beautifulsoup import hacker_news_api_integration
         hacker_news_api_integration()
 
+    elif app_option == 4:
+        from quotes_to_scrape.with_beautifulsoup import main_scraper
+        main_scraper()
 
 print(
     f'\nThanks for using our Apps\n' +
